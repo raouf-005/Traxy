@@ -7,7 +7,11 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        'inset-pink': 'inset -50px -50px 100px pink',
+      }
+    },
   },
   darkMode: "class",
   plugins: [nextui()],

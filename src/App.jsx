@@ -1,20 +1,32 @@
-import { useState } from 'react'
 
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css'
-import Navbar from './components/navbar';
-import Video from './components/Video';
-import Modal3D from './components/Modal3D';
+import Landing from './pages/Landing';
+import Gps from './pages/Gps';
+import Solar from './pages/Solar';
 
 function App() {
-  const [count, setCount] = useState(0)
+
+
+  const router = createBrowserRouter(
+    [
+      {
+        path: '/*',
+        element: <Landing />,
+      },
+      {
+        path: '/gps',
+        element: <Gps />,
+      },{
+        path: '/solar',
+        element: <Solar />,
+      }
+
+    ]
+  );
 
   return (
-    <>
-   
-      <Navbar />
-      <Video />
-      <Modal3D />
-    </>
+    <RouterProvider router={router} />
   )
 }
 
