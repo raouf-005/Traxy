@@ -14,7 +14,7 @@ export default function Video() {
           src={Videomp4}
        />
        <div className="absolute text-center  lg:space-y-24 md:space-y-12 space-y-8">
-       <h1 className='text-white text-2xl max-w-md  lg:text-7xl font-bold text-center lg:max-w-7xl md:max-w-2xl flex md:text-5xl'>
+       <h1 className='text-white text-3xl max-w-md  lg:text-7xl font-bold text-center lg:max-w-7xl md:max-w-2xl flex md:text-5xl'>
        Comprehensive Solutions for Security and Renewable Energy
        </h1>
        <Button className="bg-transparent border-white   rounded-2xl border-1.5 md:text-sm lg:text-xl font-light  md:px-6 md:h-9  lg:px-12  lg:h-12 text-white">

@@ -2,13 +2,15 @@ import React from "react";
 import { Button } from "@nextui-org/react";
 
 export default function FooterBottom() {
+
+
   return (
-    <div className="flex flex-row justify-around py-2 items-center">
+    <div className="flex flex-row justify-around py-2 items-center flex-wrap">
       <p className=" text-slate-200">
         Copyright © 2024 TRAXY. All Rights Reserved.
       </p>
 
-      <div className="flex flex-row gap-3 ">
+      <div className="flex flex-row    gap-x-4 pt-2 flex-wrap items-center justify-center ">
         <Button href="/" className="bg-transparent text-white">
           Camera Securité
         </Button>
@@ -18,8 +20,8 @@ export default function FooterBottom() {
         <Button href="/services" className="bg-transparent text-white">
           GPS tracking System
         </Button>
-        <Button href="/contact" className="bg-transparent text-white">
-          Produits
+        <Button  className="bg-transparent text-white">
+          Home
         </Button>
       </div>
 

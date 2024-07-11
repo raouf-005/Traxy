@@ -31,7 +31,7 @@ export default function OurService(props) {
           src={props.image || serviceImg}
           alt="service"
           width={900}
-          className="object-fill"
+          className="object-fill hidden md:flex"
         />
         <div className="flex flex-col gap-14 pt-20">
           <p className=" font-bold text-xl text-[#7959D4]">Features</p>

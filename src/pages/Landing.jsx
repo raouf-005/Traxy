@@ -5,10 +5,12 @@ import EarthContainer from "../landingcomponents/EarthContainer";
 import AboutUs from "../landingcomponents/AboutUs";
 import Footer from "../landingcomponents/Footer";
 
+
 export default function Landing() {
   return (
-    <div className="flex flex-col  bg-black/80  bg-opacity-45 " >
-      <Navbar />
+    <div className="flex flex-col  bg-black/80  bg-opacity-45  w-full" >
+      <Navbar/>
+     
       <Video />
       <ServiceContainer />
       <EarthContainer />
