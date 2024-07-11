@@ -12,19 +12,21 @@ import Gpsballs from "../assets/gpsballs.svg";
 
 export default function Gps() {
   return (
-    <div className="  " >
+    <div className="  ">
       <Navbar />
-        <TitleComponent />
-        <div className=" bg-gray-600  bg-cover bg-opacity-75  " style={{ backgroundImage: `url(${Gpsballs})`}}>
-        <Features/>
-        <ShowComponent/>
-        <ShowComponent2/>
-        <ShowComponent3/>
-        <ShowComponent4/>
-        <ShowComponent5/>
-          
-          </div>
-      <Footer />
+      <TitleComponent />
+      <div
+        className="  bg-cover bg-opacity-75  "
+        style={{ backgroundImage: `url(${Gpsballs})` }}
+      >
+        <Features />
+        <ShowComponent />
+        <ShowComponent2 />
+        <ShowComponent3 />
+        <ShowComponent4 />
+        <ShowComponent5 />
+        <Footer />
+      </div>
     </div>
   );
 }

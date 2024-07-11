@@ -6,7 +6,7 @@ import TwitterIcon from "../assets/socialmedia/twitter.svg";
 import InstagramIcon from "../assets/socialmedia/instagram.svg";
 export default function FooterBody() {
   return (
-    <div className="grid grid-cols-[37%,40%,20%] pt-32 pb-20   items-top   gap-4">
+    <div className="grid grid-cols-[37%,36%,16%] pt-32 pb-20   items-top   gap-4">
       <div className="   text-white flex flex-col items-center   gap-10 ">
         <p className="text-6xl font-semibold">Traxy</p>
         <p className="text-md font-slate-200 font-normal">
@@ -19,14 +19,14 @@ export default function FooterBody() {
 
         <div className="max-w-[450px] text-slate-200 flex flex-col gap-2 ">
           <p className="text-lg font-light">Feel Free to ask</p>
-          <div className="flex flex-col flex-wrap gap-2 text-slate-100  pl-[4%] ">
+          <div className="flex flex-col flex-wrap gap-2 text-slate-100  ">
             <p>support@traxy.dz</p>
             <p>+213 555 555 555</p>
             <p>1234 Street Name, City Name, United States</p>
           </div>
         </div>
       </div>
-      <div className=" flex flex-col gap-14  py-2">
+      <div className=" flex flex-col  items-center gap-14  py-2">
         <h4 className=" text-white  font-normal text-2xl">Social</h4>
         <div className="flex flex-row gap-2  ">
           <Button

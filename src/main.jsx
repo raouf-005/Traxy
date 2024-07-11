@@ -4,6 +4,9 @@ import App from './App.jsx'
 import './index.css'
 import {NextUIProvider} from "@nextui-org/react";
 
+if (typeof global === "undefined") {
+  window.global = window;
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

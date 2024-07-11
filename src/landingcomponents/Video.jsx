@@ -13,11 +13,11 @@ export default function Video() {
           playsInline
           src={Videomp4}
        />
-       <div className="absolute text-center  space-y-24">
-       <h1 className='text-white text-7xl font-bold text-center max-w-7xl'>
+       <div className="absolute text-center  lg:space-y-24 md:space-y-12 space-y-8">
+       <h1 className='text-white text-2xl max-w-md  lg:text-7xl font-bold text-center lg:max-w-7xl md:max-w-2xl flex md:text-5xl'>
        Comprehensive Solutions for Security and Renewable Energy
        </h1>
-       <Button className="bg-transparent border-white   rounded-2xl border-1.5 text-xl font-light   px-12  h-12 text-white">
+       <Button className="bg-transparent border-white   rounded-2xl border-1.5 md:text-sm lg:text-xl font-light  md:px-6 md:h-9  lg:px-12  lg:h-12 text-white">
             About us
        </Button>
 

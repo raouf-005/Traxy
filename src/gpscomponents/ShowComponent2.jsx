@@ -5,13 +5,13 @@ import pc from "../assets/pc.svg";
 
 export default function ShowComponent2() {
   return (
-    <div className="flex flex-row text-white py-20 justify-start    ">
+    <div className="flex flex-row text-white py-20 gap-8  lg:gap-0 justify-center  lg:justify-start md:text-start text-center  flex-wrap-reverse md:flex-nowrap  ">
       <Image src={pc} alt="gps" width={860} />
-      <div className="flex flex-col  gap-12 justify-center  z-30 ">
-        <h1 className=" text-7xl  font-bold   ">
+      <div className="flex flex-col  gap-8 lg:gap-12 px-6 lg:px-0  justify-center  items-center lg:items-start z-30 ">
+        <h1 className="text-5xl lg:text-7xl  font-bold    ">
           FLEET MANAGEMENT
         </h1>
-        <ul className=" max-w-2xl text-xl leading-8 gap-4 flex flex-col">
+        <ul className=" max-w-2xl  text-md lg:text-xl lg:leading-8 lg:gap-4 gap-2 flex flex-col">
           <li>
           Maximize Fleet Efficiency.
           </li>

@@ -5,9 +5,9 @@ import BgGps from "../assets/bgGps.svg";
 
 export default function TitleComponent() {
   return (
-    <div className="flex flex-row justify-between gap-64 py-2  object-cover   shadow-slate-800 shadow-2xl " style={{ backgroundImage: `url(${BgGps})`  }}>
-      <div className="flex flex-col justify-center pl-20">
-        <h1 className="text-9xl max-w-md font-bold text-white">
+    <div className="flex flex-row justify-between lg:gap-64 md:gap-32 gap-12 py-2  object-cover   shadow-slate-800/40 shadow-lg  " style={{ backgroundImage: `url(${BgGps})`  }}>
+      <div className="flex flex-col flex-wrap justify-center lg:pl-20 md:pl-10 pl-4">
+        <h1 className="md:text-7xl text-5xl   lg:text-9xl max-w-md font-bold text-white">
           GPS TRACKING SYSTEM
         </h1>
        

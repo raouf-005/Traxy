@@ -10,7 +10,6 @@ export default function Landing() {
     <div className="flex flex-col  bg-black/80  bg-opacity-45 " >
       <Navbar />
       <Video />
-
       <ServiceContainer />
       <EarthContainer />
       <AboutUs />

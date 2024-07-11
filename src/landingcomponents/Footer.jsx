@@ -7,7 +7,7 @@ export default function Footer() {
     
     
     return (
-        <div className=" bg-gray-700">
+        <div className=" bg-gray-700 md:mt-40">
             <FooterBody />
              <FooterBottom />
         </div>

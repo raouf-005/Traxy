@@ -3,3 +3,15 @@
 @tailwind utilities;  
 
 
+@font-face {
+    font-family: 'sfpro';
+    src: url('/public/sf-pro-display/SFPRODISPLAYBLACKITALIC.OTF') format('truetype');
+    font-weight: 900; /* Black weight is typically 900 */
+    font-style: italic;
+}
+
+.fontest{
+    font-family: 'sfpro';
+    font-weight: 900;
+    font-style: italic;
+}

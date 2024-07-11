@@ -12,7 +12,7 @@ export default function About() {
       </div>
       <div className="flex flex-row justify-center gap-10  ">
         <div className=" flex flex-row items-center justify-center  shadow-xl p-8  gap-10 bg-white rounded-3xl">
-          <Image src={solar1} alt="earth" className="rounded-3xl   max-w-[25em] object-cover " />
+          <Image src={solar1} width={400} alt="earth" className="rounded-3xl    object-cover " />
           <div className="flex flex-col gap-12 max-w-md items-start">
             <p className=" text-lg font-semibold text-[#7959D4]">solar energy</p>
             <h2 className=" text-3xl text-balance font-bold">Expert Installation</h2>
@@ -25,8 +25,8 @@ export default function About() {
             </Button>
           </div>
         </div>
-        <div className="flex flex-row  shadow-xl  justify-center items-center p-8  bg-white rounded-3xl ">
-        <Image src={solar4} alt="earth" className="rounded-3xl   max-w-[23em] object-cover " />
+        <div className="flex flex-row  shadow-xl  justify-center items-center p-7  bg-white rounded-3xl ">
+        <Image src={solar4} width={390}   alt="earth" className="rounded-3xl      object-fill " />
         </div>
       </div>
     </div>

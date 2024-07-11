@@ -31,7 +31,7 @@ export default class App extends React.Component {
           timeout={`4000`}
         />
 
-        <div className=" absolute text-[8rem]  italic text-center outline ">
+        <div className=" absolute text-[8rem] fontest font-bold italic text-center outline ">
         SOLAR ENERGY
         </div>
         

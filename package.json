@@ -17,6 +17,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.24.0",
+    "react-spring": "^9.7.3",
+    "react-swipy": "^0.0.6",
     "three": "^0.166.0"
   },
   "devDependencies": {

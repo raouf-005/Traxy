@@ -10,7 +10,8 @@ export default function About2() {
         <Image
           src={solar2}
           alt="earth"
-          className="rounded-3xl  min-h-[560px] max-w-[24em] object-cover "
+          width={388}
+          className="rounded-3xl    object-cover "
         />
       </div>
       <div className=" flex flex-row  justify-center p-12  shadow-xl  gap-10  bg-white rounded-[5.8rem]">
@@ -24,7 +25,8 @@ export default function About2() {
         <Image
           src={solar3}
           alt="earth"
-          className="rounded-3xl  min-h-[560px] max-w-[25em] object-cover "
+          width={400}
+          className="rounded-3xl   object-cover "
         />
       </div>
     </div>

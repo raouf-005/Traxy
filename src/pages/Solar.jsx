@@ -13,8 +13,6 @@ export default function Solar() {
     return (
         <div className='  bg-opacity-75   bg-cover '  style={{ backgroundImage: `url(${BgSolar})`}}>
             <Navbar />
-        
-
             <SlideTitle />
             <About />
             <About2 />
