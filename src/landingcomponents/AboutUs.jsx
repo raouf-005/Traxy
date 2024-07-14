@@ -28,11 +28,11 @@ const list = [
 export default function AboutUs() {
   return (
     <div className=" bg-custom rounded-bl-[160px] ">
-      <div className="flex flex-col gap-8 md:gap-16 text-center py-32   bg-[#7959D4] rounded-tr-[160px] rounded-bl-[160px]">
+      <div className="flex flex-col gap-8 md:gap-16 text-center py-32   bg-[#7959D4] rounded-tr-[160px] rounded-bl-[160px]" id='about-section'>
         <h1 className=" text-white  text-5xl md:text-6xl lg:text-8xl font-bold  ">
           ABOUT US
         </h1>
-        <p className="md:leading-[48px]  leading-7 text-md  lg:text-xl  font-light text-white">
+        <p className="md:leading-[48px]  leading-7 text-md  lg:text-xl px-12 font-light text-white">
           Established in 2011, Traxy has emerged as a leader in providing
           advanced fleet management solutions, GPS tracking systems, security
           solutions, and renewable energy technologies in Algeria. With over 13

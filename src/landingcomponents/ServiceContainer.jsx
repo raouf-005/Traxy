@@ -6,7 +6,7 @@ import SolarPanel from "../assets/solarpanel2.svg";
 export default function ServiceContainer() {
   return (
     <div className="bg-custom">
-      <div className=" flex  flex-row py-24 justify-center gap-10 bg-[#7959D4]  flex-wrap  rounded-bl-[190px]">
+      <div className=" flex  flex-row py-24 justify-center gap-[3%] bg-[#7959D4]  flex-wrap  rounded-bl-[190px]">
         <CardService
           image={SolarPanel}
           title={"SOLAR ENERGY"}

@@ -2,6 +2,18 @@ import React from "react";
 import Videomp4 from "../assets/video.mp4";
 import { Button } from "@nextui-org/react";
 
+
+export const handleClick = (anchor) => () => {
+  const id = `${anchor}-section`;
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
+
 export default function Video() {
   return (
     <div className="flex flex-col items-center justify-center w-full  relative">
@@ -18,7 +30,10 @@ export default function Video() {
           Your Trusted Partner for Advanced Security and Renewable Energy
           Solutions
         </h1>
-        <Button className="bg-transparent border-white   rounded-2xl border-1.5 md:text-sm lg:text-xl font-light  md:px-6 md:h-9  lg:px-12  lg:h-12 text-white">
+        <Button onClick={
+          handleClick("about")
+        
+        } className="bg-transparent border-white   rounded-2xl border-1.5 md:text-sm lg:text-xl font-light  md:px-6 md:h-9  lg:px-12  lg:h-12 text-white">
           About us
         </Button>
       </div>

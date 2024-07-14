@@ -27,7 +27,7 @@ const ServiceCard = (props) => {
 
 export default function OurService(props) {
   return (
-    <div className={`flex p-10 md:py-20 py-8  justify-center   items-center`}>
+    <div className={`flex p-10 md:py-20 py-8  justify-center   items-center`} >
       <div className={`flex flex-row    py-14   shadow-xl rounded-[4rem]   ${props.className}`}>
         <Image
           src={props.image || serviceImg}
@@ -35,10 +35,10 @@ export default function OurService(props) {
           width={900}
           className="object-fill hidden md:flex"
         />
-        <div className="flex flex-col md:gap-14 gap-8 sm:pt-20 pl-10 sm:pl-0">
+        <div className="flex flex-col md:gap-14 gap-8 sm:pt-20 pl-10 sm:pl-0" id="service-section">
           <p className=" font-bold text-lg text-[#7959D4]">Features</p>
           <h2 className="text-3xl font-semibold ">Our Services</h2>
-          <div className="flex-col flex gap-10 mt-[3%]">
+          <div className="flex-col flex gap-10 mt-[3%]" >
             {props.list&&props.list.map((item, index) => {
               return (
                 <ServiceCard
