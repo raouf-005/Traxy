@@ -8,7 +8,9 @@ const ServiceCard = (props) => {
       <Image
         src={props.image || smileface}
         alt="smile"
-        className={`object-fill  ${props.className?'bg-[#816DAB]':''} rounded-full `}
+        width={98}
+        height={98}
+        className={`object-scale-down  ${props.className?'bg-[#816DAB]/70':'bg-[#B28EFF]/50'} rounded-full `}
       />
       <div className="flex flex-col gap-3 md:gap-4  pr-[9%]">
         <h3 className="md:text-2xl  font-bold  ">

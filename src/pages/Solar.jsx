@@ -8,25 +8,30 @@ import OurService from "../solarcomponents/OurService";
 import HowWorks from "../solarcomponents/HowWorks";
 import About2 from "../solarcomponents/About2";
 import BgSolar from "../assets/tn.svg";
-
+import settings from "../assets/settingsb.svg";
+import user from "../assets/userb.svg";
+import smile from "../assets/smileb.svg";
 const list = [
   {
     title: "Free Consultation",
     description:
       "Receive expert advice and a customized solar solution tailored to your energy needs.",
     className: "bg-[#B28EFF]",
+    image: smile,
   },
   {
-    title: "Free Consultation",
+    title: "Professional Installation",
     description:
-      "Receive expert advice and a customized solar solution tailored to your energy needs.",
+      "Our skilled team manages the entire installation process, ensuring a smooth and hassle-free experience.",
     className: "bg-[#B28EFF]",
+    image: settings,
   },
   {
-    title: "Free Consultation",
+    title: "Comprehensive Maintenance",
     description:
-      "Receive expert advice and a customized solar solution tailored to your energy needs.",
-    className: "bg-[#816DAB]",
+      "Ensure your solar system operates at peak efficiency with our ongoing maintenance services.",
+    className: "bg-[#B28EFF]",
+    image: user,
   },
 ];
 
