@@ -1,8 +1,9 @@
 import React from "react";
 import { Button } from "@nextui-org/react";
+import { useNavigate } from "react-router-dom";
 
 export default function FooterBottom() {
-
+  const navigate = useNavigate();
 
   return (
     <div className="flex flex-row justify-around py-2 items-center flex-wrap">
@@ -11,23 +12,45 @@ export default function FooterBottom() {
       </p>
 
       <div className="flex flex-row    gap-x-4 pt-2 flex-wrap items-center justify-center ">
-        <Button href="/" className="bg-transparent text-white">
+        <Button
+          onClick={() => {
+            navigate("/");
+          }}
+          className="bg-transparent text-white"
+        >
+          Home
+        </Button>
+        <Button
+          onClick={() => {
+            navigate("/camera");
+          }}
+          className="bg-transparent text-white"
+        >
           Camera Securité
         </Button>
-        <Button href="/about" className="bg-transparent text-white">
+        <Button
+          onClick={() => {
+            navigate("/solar");
+          }}
+          className="bg-transparent text-white"
+        >
           Energy Solaire
         </Button>
-        <Button href="/services" className="bg-transparent text-white">
+        <Button
+          onClick={() => {
+            navigate("/gps");
+          }}
+          className="bg-transparent text-white"
+        >
           GPS tracking System
-        </Button>
-        <Button  className="bg-transparent text-white">
-          Home
         </Button>
       </div>
 
       <div className=" text-white flex-row flex gap-6">
-        <Button  className="bg-transparent text-white">Terms of Conditions</Button>
-        <Button  className="bg-transparent text-white">Privacy Policy</Button>
+        <Button className="bg-transparent text-white">
+          Terms of Conditions
+        </Button>
+        <Button className="bg-transparent text-white">Privacy Policy</Button>
       </div>
     </div>
   );

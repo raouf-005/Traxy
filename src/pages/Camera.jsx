@@ -11,16 +11,19 @@ const list = [
         title: "Free Consultation",
         description:
         "Receive expert advice and a customized solar solution tailored to your energy needs.",
+        className: "bg-[#B28EFF]",
     },
     {
         title: "Free Consultation",
         description:
         "Receive expert advice and a customized solar solution tailored to your energy needs.",
+        className: "bg-[#B28EFF]",
     },
     {
         title: "Free Consultation",
         description:
         "Receive expert advice and a customized solar solution tailored to your energy needs.",
+        className: "bg-[#816DAB]",  
     },
     ];
 
@@ -31,16 +34,15 @@ export default function Camera() {
     <div className="  ">
       <Navbar />
       <CameraTitle />
-      <div
-        className="  bg-cover bg-opacity-75  "
-        style={{ backgroundImage: `url(${BgCamera})` }}
-      >
+     
         <FeaturesProduct />
-        <OurService />
-        <SwipeCard />
+        <OurService  className='bg-[#B28EFF] text-white' list={list}/>
+        
         
         <Footer />
-      </div>
+   
     </div>
   );
 }
+
+//<SwipeCard /> IN PROGRESS
