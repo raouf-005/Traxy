@@ -22,7 +22,7 @@ export default function   FooterBody() {
           <p className="text-lg font-light">Feel Free to ask</p>
           <div className="flex flex-col flex-wrap gap-2 text-slate-100   ">
             <p>support@traxy.org</p>
-            <p>Manager: +213 661 37 91 48</p>
+            <p>Info: +213 661 37 91 48</p>
             <p>CCTV: +213 555 53 03 52</p>
             <p>GPS TRACKER: +213 555 53 03 55</p>
             

@@ -3,7 +3,7 @@ import React from "react";
 import handshake from "../assets/handshake.svg";
 export default function AboutCard(props) {
   return (
-    <div className="flex flex-col text-center gap-8   items-center pb-10 pt-6 px-8  bg-white  rounded-[66px] ">
+    <div className="flex flex-col text-center gap-10   items-center pb-10 pt-6 px-8  bg-white  rounded-[66px] ">
       <Image
         src={props.image}
         alt="about us"
@@ -11,9 +11,9 @@ export default function AboutCard(props) {
      
         
       />
-      <div className=" gap-10 flex flex-col max-w-[390px] ">
+      <div className=" gap-10 flex flex-col max-w-[410px] ">
         <h4 className="text-lg   ">{props.title}</h4>
-        <p className="text-center  px-5  text-md font-light ">
+        <p className="text-center  px-2  text-md font-light ">
        {props.description}
         </p>
       </div>

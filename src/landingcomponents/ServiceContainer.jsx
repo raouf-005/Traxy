@@ -21,7 +21,7 @@ export default function ServiceContainer() {
         />
         <CardService
           image={CameraCard}
-          title={"CAMERA  SECURITY"}
+          title={"SECURITY"}
           padding={"20"}
           link={"camera"}
         />
