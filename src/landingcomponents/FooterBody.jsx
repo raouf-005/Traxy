@@ -21,10 +21,10 @@ export default function   FooterBody() {
         <div className="max-w-[450px] text-slate-200 flex flex-col gap-2  ">
           <p className="text-lg font-light">Feel Free to ask</p>
           <div className="flex flex-col flex-wrap gap-2 text-slate-100   ">
-            <p>support@traxy.dz</p>
+            <p>support@traxy.org</p>
             <p>Manager: +213 661 37 91 48</p>
-            <p>Camera: +213 555 53 03 52</p>
-            <p>GPS: +213 555 53 03 55</p>
+            <p>CCTV: +213 555 53 03 52</p>
+            <p>GPS TRACKER: +213 555 53 03 55</p>
             
           </div>
         </div>

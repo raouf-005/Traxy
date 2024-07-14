@@ -73,9 +73,9 @@ const CameraCard = (props) => {
   const [image, setImage] = useState(props.image);
 
   return (
-    <div className="flex flex-col text-center justify-center items-center  ">
+    <div className="flex flex-col text-center justify-center items-center   ">
       <div className="flex flex-col text-center justify-center items-center max-w-md  py-6 rounded-[3.5rem] shadow-xl   ">
-        <div className="flex flex-col ">
+        <div className="flex flex-col  justify-center items-center">
           <Image
             src={image||props.image}
             alt="camera"
@@ -88,7 +88,7 @@ const CameraCard = (props) => {
               setImage(props.image);
             }}
           />
-          <h3 className="text-2xl  text-thin max-w-sm ">{props.title}</h3>
+          <h3 className="text-2xl  text-thin max-w-[280px]   ">{props.title}</h3>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ export default function AboutCard(props) {
      
         
       />
-      <div className=" gap-10 flex flex-col max-w-[450px] ">
+      <div className=" gap-10 flex flex-col max-w-[390px] ">
         <h4 className="text-lg   ">{props.title}</h4>
         <p className="text-center  px-5  text-md font-light ">
        {props.description}
