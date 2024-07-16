@@ -4,7 +4,7 @@ import phone2 from "../assets/phone2.svg";
 export default function ShowComponent2() {
   return (
     <div className="flex flex-row lg:gap-24 gap-8 text-white  py-14 lg:py-20 justify-start   flex-wrap-reverse md:flex-nowrap  ">
-      <Image src={phone2} alt="gps" width={710} />
+      <Image src={phone2} alt="gps" width={710} class="image"  />
       <div className="flex flex-col  lg:gap-12 gap-6  justify-center  md:pl-6  text-center  md:text-start  ">
         <h1 className="text-5xl lg:text-7xl  font-bold   ">
           TRAXY MONITOR APP

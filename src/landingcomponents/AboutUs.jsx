@@ -21,7 +21,7 @@ const list = [
     title: "Exceptional Global Products",
     description:
       "At Traxy, we partner with leading manufacturers to provide clients with the latest technologies and highest quality products. We strive to exceed expectations by offering advanced, reliable solutions that ensure clients achieve their goals efficiently. Choosing Traxy means benefiting from our expertise and high-quality products, ensuring a successful and sustainable partnership based on trust and excellence.",
-    image: rankimg,
+    image: star,
   },
 ];
 

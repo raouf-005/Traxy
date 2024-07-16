@@ -70,3 +70,4 @@ export default function   FooterBody() {
     </div>
   );
 }
+///numero in tables 
