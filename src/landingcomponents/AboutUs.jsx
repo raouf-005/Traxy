@@ -38,7 +38,7 @@ export default function AboutUs() {
         <p className="md:leading-[48px]  leading-7 text-md  lg:text-xl px-12 font-light text-white">
         Established in 2011, Traxy has become a leader in advanced fleet management solutions, GPS tracking systems, security solutions, and renewable energy technologies in Algeria. With over 13 years of experience, our expert team brings extensive market knowledge and specialized expertise to each project, ensuring high-quality service and support. We believe in delivering top-quality products to ensure customer satisfaction. We partner with the world's leading manufacturers to provide the best devices and technologies. Our branches in Batna, Algiers, and Oran enable us to offer superior technical support and services across the country.
         </p>
-        <div className=" flex flex-row justify-center flex-wrap    gap-[3%]">
+        <div className=" flex flex-row justify-center flex-wrap    gap-[3%] xl:gap-[4%]">
           {list.map((item) => (
             <AboutCard key={item.title} {...item} />
           ))}
