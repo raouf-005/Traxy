@@ -18,7 +18,7 @@ export default function FooterBottom() {
           }}
           className="bg-transparent text-white"
         >
-          Home
+          Main
         </Button>
         <Button
           onClick={() => {

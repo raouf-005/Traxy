@@ -11,38 +11,22 @@ function App() {
     {
       path: "/",
       element: <Landing />,
-      errorElement: (
-        <div className="flex items-center justify-center text-7xl p-12">
-          404 Not Found
-        </div>
-      ),
+   
     },
     {
       path: "/gps",
       element: <Gps />,
-      errorElement: (
-        <div className="flex items-center justify-center text-7xl p-12">
-          404 Not Found
-        </div>
-      ),
+  
     },
     {
       path: "/solar",
       element: <Solar />,
-      errorElement: (
-        <div className="flex items-center justify-center text-7xl p-12">
-          404 Not Found
-        </div>
-      ),
+    
     },
     {
       path: "/camera",
       element: <Camera />,
-      errorElement: (
-        <div className="flex items-center justify-center text-7xl p-12">
-          404 Not Found
-        </div>
-      ),
+     
     },
   ]);
 

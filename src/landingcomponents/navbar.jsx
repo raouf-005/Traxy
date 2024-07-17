@@ -32,7 +32,7 @@ export default function Navbar3() {
   const navigate = useNavigate();
 
   const navigatemenu = (item) => {
-    if (item === "Home") {
+    if (item === "Main") {
       navigate("/");
     }
     if (item === "Camera Securité") {
@@ -58,7 +58,7 @@ export default function Navbar3() {
             onClick={() => navigate("/")}
             className="bg-transparent text-white"
           >
-            Home
+            Main
           </Button>
           <Button
             onClick={() => {
@@ -121,7 +121,7 @@ export default function Navbar3() {
             </Button>
           </div>
           <Button className="bg-transparent text-white">
-          <a href="mailto:support@traxy.dz?">Contact us</a>
+            <a href="mailto:support@traxy.dz?">Contact us</a>
           </Button>
         </div>
         <Button
