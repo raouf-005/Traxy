@@ -15,16 +15,20 @@ function App() {
       {
         path: '/*',
         element: <Landing />,
+        errorElement: <div>404 Not Found</div>
       },
       {
         path: '/gps',
         element: <Gps />,
+        errorElement: <div>404 Not Found</div>
       },{
         path: '/solar',
         element: <Solar />,
+        errorElement: <div>404 Not Found</div>
       },{
         path: '/camera',
         element: <Camera />,
+        errorElement: <div>404 Not Found</div>
       }
 
     ]
