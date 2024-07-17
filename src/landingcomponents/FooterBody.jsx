@@ -4,8 +4,8 @@ import { Button, Image } from "@nextui-org/react";
 import FacebookIcon from "../assets/socialmedia/facebook.svg";
 import TwitterIcon from "../assets/socialmedia/twitter.svg";
 import InstagramIcon from "../assets/socialmedia/instagram.svg";
-import TiktokIcon from "../assets/socialmedia/tiktok.svg"
-export default function   FooterBody() {
+import TiktokIcon from "../assets/socialmedia/tiktok.svg";
+export default function FooterBody() {
   return (
     <div className="grid md:grid-cols-[37%,36%,16%] grid-cols-[60%,35%] md:pt-32 md:pb-20 pt-10  pb-8   items-top   gap-4">
       <div className="   text-white   flex-col items-center hidden md:flex   gap-10 ">
@@ -22,10 +22,9 @@ export default function   FooterBody() {
           <p className="text-lg font-light">Feel Free to ask</p>
           <div className="flex flex-col flex-wrap gap-2 text-slate-100   ">
             <p>support@traxy.org</p>
-            <p>Info: +213 661 37 91 48</p>
-            <p>CCTV: +213 555 53 03 52</p>
-            <p>GPS TRACKER: +213 555 53 03 55</p>
-            
+            <p>Info: <span className="md:pl-20">+213 661 37 91 48</span></p>
+            <p>CCTV: <span className="md:pl-16">+213 555 53 03 52</span></p>
+            <p>GPS TRACKER: <span className="pl-1">+213 555 53 03 55</span></p>
           </div>
         </div>
       </div>
@@ -33,9 +32,9 @@ export default function   FooterBody() {
         <h4 className=" text-white  font-normal text-2xl">Social</h4>
         <div className="flex flex-row gap-2  ">
           <Button
-              onClick={() => {
-                window.open('https://www.facebook.com/WWW.S3.DZ');
-              }}
+            onClick={() => {
+              window.open("https://www.facebook.com/WWW.S3.DZ");
+            }}
             radius="full"
             size="lg"
             isIconOnly
@@ -45,7 +44,7 @@ export default function   FooterBody() {
           </Button>
           <Button
             onClick={() => {
-              window.open('https://www.tiktok.com/@traxy.dz');
+              window.open("https://www.tiktok.com/@traxy.dz");
             }}
             radius="full"
             size="lg"
@@ -60,7 +59,7 @@ export default function   FooterBody() {
             isIconOnly
             className=" bg-gray-500  md:w-[58px] md:h-[58px]"
             onClick={() => {
-              window.open('https://www.instagram.com/traxy.dz/');
+              window.open("https://www.instagram.com/traxy.dz/");
             }}
           >
             <Image src={InstagramIcon} alt="instagram" width={22} height={22} />
@@ -70,4 +69,4 @@ export default function   FooterBody() {
     </div>
   );
 }
-///numero in tables 
+///numero in tables

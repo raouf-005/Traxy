@@ -7,7 +7,7 @@ export default function EarthContainer() {
     <div className="flex flex-row justify-center px-24 text-white  bg-custom   py-12">
       <EarthLayout />
       <div className="flex-1 flex justify-center items-top lg:mt-40">
-        <p className="text-center  leading-[47px] max-w-3xl text-lg  ">
+        <p className="text-center  leading-[47px] max-w-md lg:max-w-3xl text-lg  ">
           Traxy excels in providing support and assistance at all stages of a
           project, from planning and design to implementation and maintenance.
           Our specialized team is always available to offer technical advice and

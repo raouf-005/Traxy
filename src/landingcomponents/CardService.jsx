@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function CardService(props) {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col gap-1 justify-center items-center ">
+    <div className="flex flex-col gap-1 justify-center items-center mb-[4%] ">
       <h3 className=" text-white text-2xl   lg:text-[1.7rem] font-semibold  pl-1 rounded-2xl">
         {props.title}
       </h3>

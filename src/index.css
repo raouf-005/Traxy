@@ -30,6 +30,10 @@
 
   @media (prefers-reduced-motion: no-preference) {
     .image-animation {
-      animation: enter-animation 0.5s 1 ease-in-out; 
+      animation: enter-animation 1.2s 1 ease-in-out; 
     }
   }
+
+
+
+  

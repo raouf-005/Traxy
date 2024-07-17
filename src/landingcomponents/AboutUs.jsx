@@ -9,7 +9,7 @@ const list = [
     title: "Certificates of Excellence and Our Commitment to Quality",
     description:
       "Traxy has earned over 100 certificates of excellence from esteemed public companies. We are dedicated to superior quality, innovation, and efficiency, ensuring customer satisfaction and project success. Our impressive track record allows us to expand our services and meet evolving market needs",
-    image: star,
+    image: rankimg,
   },
   {
     title: "Qualified Consulting & Project Support",
@@ -38,7 +38,7 @@ export default function AboutUs() {
         <p className="md:leading-[48px]  leading-7 text-md  lg:text-xl px-12 font-light text-white">
         Established in 2011, Traxy has become a leader in advanced fleet management solutions, GPS tracking systems, security solutions, and renewable energy technologies in Algeria. With over 13 years of experience, our expert team brings extensive market knowledge and specialized expertise to each project, ensuring high-quality service and support. We believe in delivering top-quality products to ensure customer satisfaction. We partner with the world's leading manufacturers to provide the best devices and technologies. Our branches in Batna, Algiers, and Oran enable us to offer superior technical support and services across the country.
         </p>
-        <div className=" flex flex-row justify-center flex-wrap  gap-[3%]">
+        <div className=" flex flex-row justify-center flex-wrap    gap-[3%]">
           {list.map((item) => (
             <AboutCard key={item.title} {...item} />
           ))}
