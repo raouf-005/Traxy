@@ -16,9 +16,9 @@ export const handleClick = (anchor) => () => {
 
 export default function Video() {
   return (
-    <div className="flex flex-col items-center justify-center w-full  relative">
+    <div className="flex flex-col items-center  justify-center w-full  relative">
       <video
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover "
         autoPlay
         loop
         muted
@@ -26,7 +26,7 @@ export default function Video() {
         src={Videomp4}
       />
       <div className="absolute text-center  lg:space-y-24 md:space-y-12 space-y-8">
-        <h1 className="text-white text-3xl max-w-md  lg:text-7xl font-bold text-center lg:max-w-[1500px] md:max-w-2xl flex md:text-5xl">
+        <h1 className="text-white text-xl sm:text-3xl max-w-sm sm:max-w-md  lg:text-7xl font-bold text-center lg:max-w-[1500px] md:max-w-2xl flex md:text-5xl">
           Your Trusted Partner for Advanced Security and Renewable Energy
           Solutions
         </h1>

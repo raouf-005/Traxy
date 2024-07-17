@@ -37,9 +37,9 @@ export default function OurService(props) {
           width={900}
           className="object-fill hidden md:flex"
         />
-        <div className="flex flex-col md:gap-14 gap-8 sm:pt-20 pl-10 sm:pl-0" id="service-section">
-          <p className=" font-bold text-lg text-[#7959D4]">Features</p>
-          <h2 className="text-3xl font-semibold ">Our Services</h2>
+        <div className="flex flex-col md:gap-14 gap-8 sm:pt-20  sm:pl-0" id="service-section">
+          <p className=" font-bold text-lg text-[#7959D4] pl-5 sm:pl-0">Features</p>
+          <h2 className="text-3xl font-semibold  pl-5 sm:pl-0 ">Our Services</h2>
           <div className="flex-col flex gap-10 mt-[3%]" >
             {props.list&&props.list.map((item, index) => {
               return (

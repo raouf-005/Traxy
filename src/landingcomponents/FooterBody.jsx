@@ -7,7 +7,7 @@ import InstagramIcon from "../assets/socialmedia/instagram.svg";
 import TiktokIcon from "../assets/socialmedia/tiktok.svg";
 export default function FooterBody() {
   return (
-    <div className="grid md:grid-cols-[37%,36%,16%] grid-cols-[60%,35%] md:pt-32 md:pb-20 pt-10  pb-8   items-top   gap-4">
+    <div className="grid md:grid-cols-[37%,36%,16%] sm:grid-cols-[60%,35%] grid-cols-2 md:pt-32 md:pb-20 pt-10  pb-8   items-top   gap-4">
       <div className="   text-white   flex-col items-center hidden md:flex   gap-10 ">
         <p className="text-6xl font-semibold">Traxy</p>
         <p className="text-md font-slate-200 font-normal ">
@@ -16,21 +16,21 @@ export default function FooterBody() {
         </p>
       </div>
       <div className=" flex flex-col  gap-2 py-2    md:pl-0 pl-[13%] ">
-        <h2 className="text-white font-bold text-2xl">Contact us</h2>
+        <h2 className="text-white font-bold text-xl sm:text-2xl">Contact us</h2>
 
         <div className="max-w-[450px] text-slate-200 flex flex-col gap-2  ">
-          <p className="text-lg font-light">Feel Free to ask</p>
+          <p className="sm:text-lg font-light">Feel Free to ask</p>
           <div className="flex flex-col flex-wrap gap-2 text-slate-100   ">
-            <p>support@traxy.org</p>
-            <p>Info: <span className="md:pl-20">+213 661 37 91 48</span></p>
-            <p>CCTV: <span className="md:pl-16">+213 555 53 03 52</span></p>
-            <p>GPS TRACKER: <span className="pl-1">+213 555 53 03 55</span></p>
+            <p className=" text-sm sm:text-base">support@traxy.org</p>
+            <p className="  text-sm sm:text-base ">Info: <span className="md:pl-20">+213 661 37 91 48</span></p>
+            <p className="  text-sm sm:text-base ">CCTV: <span className="md:pl-16">+213 555 53 03 52</span></p>
+            <p className=" text-sm sm:text-base text-nowrap">GPS TRACKER: <span className="pl-1">+213 555 53 03 55</span></p>
           </div>
         </div>
       </div>
-      <div className=" flex flex-col  items-center gap-[27%]  py-2">
-        <h4 className=" text-white  font-normal text-2xl">Social</h4>
-        <div className="flex flex-row gap-2  ">
+      <div className=" flex flex-col  items-center sm:gap-[27%] gap-[17%]  py-2">
+        <h4 className=" text-white  font-normal text-xl sm:text-2xl">Social</h4>
+        <div className="flex flex-row gap-2   ">
           <Button
             onClick={() => {
               window.open("https://www.facebook.com/WWW.S3.DZ");

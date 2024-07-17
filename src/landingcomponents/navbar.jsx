@@ -6,11 +6,15 @@ import TwitterIcon from "../assets/socialmedia/twitter.svg";
 import InstagramIcon from "../assets/socialmedia/instagram.svg";
 import TiktokIcon from "../assets/socialmedia/tiktok.svg";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Menu from "../assets/menu.svg";
 
+
+
+
+
 const menuItems = [
-  "Home",
+  "Main",
   "Camera Securité",
   "Energy Solaire",
   "GPS tracking System",
@@ -29,7 +33,42 @@ export const handleClick = (anchor) => () => {
 
 export default function Navbar3() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  const [visible, setVisible] = useState(true);
+  const [isScrollDisabled, setIsScrollDisabled] = useState(false);
+
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (isScrollDisabled) {
+      document.body.classList.add('overflow-hidden');
+      document.body.classList.add('h-screen');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+      document.body.classList.remove('h-screen');
+    }
+    
+    return () => {
+      document.body.classList.remove('overflow-hidden');
+      document.body.classList.remove('h-screen');
+    };
+  }, [isScrollDisabled]);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+    const isVisible = prevScrollPos > currentScrollPos;
+
+    setVisible(isVisible);
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
 
   const navigatemenu = (item) => {
     if (item === "Main") {
@@ -48,7 +87,12 @@ export default function Navbar3() {
 
   return (
     <>
-      <nav className="flex flex-row  lg:px-12 px-6  py-3 bg-black text-white justify-between  items-center">
+      <nav
+        id="navbar"
+        className={`flex flex-row  lg:px-12 px-6  sm:fixed rela     w-full  z-20 py-3 bg-black text-white justify-between  items-center ${
+          visible ? "sm:top-0" : "sm:-top-24"
+        }`}
+      >
         <div className="flex flex-row   lg:gap-12  items-center ">
           <Image src={traxylogo} alt="logo" width={60} height={60} />
           <h1 className=" text-4xl">TRAXY</h1>
@@ -127,8 +171,9 @@ export default function Navbar3() {
         <Button
           onClick={() => {
             setIsMenuOpen(!isMenuOpen);
+            setIsScrollDisabled(!isScrollDisabled);
           }}
-          className="flex md:hidden bg-transparent w-14 h-14  rounded-full "
+          className="flex md:hidden bg-transparent w-14 h-14  rounded-full   "
           isIconOnly
         >
           <Image src={Menu} alt="logo" />
