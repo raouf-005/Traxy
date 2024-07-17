@@ -5,7 +5,7 @@ import solar2 from "../images/solar2.svg";
 
 export default function About2() {
   return (
-    <div className="flex flex-row justify-center gap-12 ">
+    <div className="flex flex-row p-4 sm:p-0 justify-center gap-12 ">
       <div className="flex-row hidden sm:flex  shadow-xl  justify-center items-center p-8 bg-white  rounded-3xl ">
         <Image
           src={solar2}

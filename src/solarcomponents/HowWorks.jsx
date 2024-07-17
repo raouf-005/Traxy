@@ -33,7 +33,7 @@ export default function HowWorks() {
       <h1 className="sm:text-7xl text-4xl font-bold text-white">
         How It Works?
       </h1>
-      <div className="flex flex-row gap-12 py-12 justify-center items-center flex-wrap">
+      <div className="flex flex-row gap-12 py-12 px-3 sm:px-0 justify-center items-center flex-wrap">
         {works.map((work, index) => (
           <WorkCard key={index} color={work.color} {...work} />
         ))}

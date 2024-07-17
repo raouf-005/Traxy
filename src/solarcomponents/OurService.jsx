@@ -29,7 +29,7 @@ const ServiceCard = (props) => {
 
 export default function OurService(props) {
   return (
-    <div className={`flex p-10 md:py-20 py-8  justify-center   items-center`} >
+    <div className={`flex sm:p-10 p-4 md:py-20 py-8  justify-center   items-center`} >
       <div className={`flex flex-row    py-14   shadow-xl rounded-[4rem]   ${props.className}`}>
         <Image
           src={props.image || serviceImg}
