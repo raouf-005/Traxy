@@ -8,7 +8,7 @@ import CameraBg from "../assets/cameraBg.svg"
 export default function CameraTitle() {
     return (
     <div className="flex">
-        <img  src={CameraBg} alt="gps"  />
+        <img  src={CameraBg} alt="gps"  className="w-screen" />
     </div>
     );
   }

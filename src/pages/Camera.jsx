@@ -10,6 +10,7 @@ import ServiceCamera from "../assets/serviceCamera.svg";
 import settings from "../assets/settings.svg";
 import user from "../assets/user.svg";
 import smile from "../assets/smile.svg";
+import OurServices from "../cameracomponents/OurServices";
 const list = [
     {
         title: "Monitoring",
@@ -43,8 +44,8 @@ export default function Camera() {
       <CameraTitle />
      
         <FeaturesProduct />
-        <OurService  className='bg-[#B28EFF] text-white' list={list} image={ServiceCamera}/>
-        
+       
+        <OurServices list={list} />
         
         <Footer />
    
@@ -53,3 +54,4 @@ export default function Camera() {
 }
 
 //<SwipeCard /> IN PROGRESS
+// <OurService  className='bg-[#B28EFF] text-white' list={list} image={ServiceCamera}/> old service card
