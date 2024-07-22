@@ -89,7 +89,7 @@ export default function Navbar3() {
     <>
       <nav
         id="navbar"
-        className={`flex flex-row  lg:px-12 px-6  sm:fixed rela     w-full  z-20 py-3 bg-black text-white justify-between  items-center ${
+        className={`flex flex-row  lg:px-12 px-6  sm:fixed rela     w-full  z-50 py-3 bg-black text-white justify-between  items-center ${
           visible ? "sm:top-0" : "sm:-top-24"
         }`}
       >
