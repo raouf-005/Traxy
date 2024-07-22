@@ -25,8 +25,8 @@ export default function Video() {
         playsInline
         src={Videomp4}
       />
-      <div className="absolute text-center  lg:space-y-24 md:space-y-12 space-y-8">
-        <h1 className="text-white text-xl sm:text-3xl max-w-sm sm:max-w-md  lg:text-7xl font-bold text-center lg:max-w-[1500px] md:max-w-2xl flex md:text-5xl">
+      <div className="absolute text-center   lg:space-y-28 md:space-y-12 space-y-8">
+        <h1 className="text-white text-transparent text-xl  sm:text-3xl max-w-sm sm:max-w-md  lg:text-7xl font-bold text-center lg:max-w-[1500px] md:max-w-2xl flex md:text-5xl">
           Your Trusted Partner for Advanced Security and Renewable Energy
           Solutions
         </h1>
