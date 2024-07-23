@@ -81,18 +81,18 @@ export default class Slideshow extends React.Component {
 
   render() {
     return (
-      <div className="lp-slideshow">
+      <div className="lp-slideshow -mt-[2.5%] md:mt-0 xl:-mt-[3.5%] ">
         <div className="container">
           {this.props.input.map((image, index) => {
             return (
               <div
                 key={index}
-                className={`slide ${
+                className={`slide  ${
                   this.state.slideIndex === index ? "active" : ""
-                }`}
+                }    `}
               >
                
-                <img className="image" src={image.src} alt={image.caption} />
+                <img className="image   object-bottom   h-screen" src={image.src} alt={image.caption}  />
               </div>
             );
           })}
@@ -104,13 +104,13 @@ export default class Slideshow extends React.Component {
             ❯
           </span>
         </div>
-
-        <div className="dot-container">
+          
+        <div className="dot-container relative">
           {this.props.input.map((_, index) => {
             return (
               <span
                 key={index}
-                className={`dot ${
+                className={`dot  bottom-20   ${
                   this.state.slideIndex === index ? "active" : ""
                 }`}
                 onClick={() => this.setSlideIndex(index)}
@@ -118,6 +118,9 @@ export default class Slideshow extends React.Component {
             );
           })}
         </div>
+
+
+        
       </div>
     );
   }

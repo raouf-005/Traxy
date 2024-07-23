@@ -3,11 +3,13 @@
   width: 100%;
   max-width: 100%;
   overflow: hidden;
+  
 }
 
 .lp-slideshow > .container > .slide {
   width: 100%;
   height: 100%;
+  
   position: absolute;
   margin: auto;
   opacity: 0;
@@ -23,9 +25,11 @@
 
 .lp-slideshow > .container > .slide > .image {
   width: 100%;
-  height: 95%;
+  height: 100%;
   object-fit: fill;
-  padding-block: 20px;
+  
+  margin-block: -30px;
+  
 }
 
 .lp-slideshow > .container > .slide > .number-text {
@@ -91,20 +95,17 @@
 
 .lp-slideshow > .dot-container {
   text-align: center;
-  margin: 1rem auto;
+  
 }
 
 .lp-slideshow > .dot-container > .dot {
-  height: 15px;
-  width: 15px;
+  height: 28px;
+  width: 28px;
   margin: 0 0.4rem;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  -webkit-transition: background-color 0.6s ease;
-  -moz-transition: background-color 0.6s ease;
-  -o-transition: background-color 0.6s ease;
 }
 
 .lp-slideshow > .dot-container > .dot.active,
@@ -116,24 +117,45 @@
   cursor: pointer;
 }
 
-
 /* Faux outline for older browsers */
 .outline {
-    color: white; /* Unfortunately you can't use transparent here … */
-    text-shadow:
-	   -1px -1px 0 #000,  
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		 1px 1px 0 #000
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 /* Real outline for modern browsers */
-@supports((text-stroke: 2px black) or (-webkit-text-stroke: 2px black)) {
-    .outline {
-        color: transparent;
-        -webkit-text-stroke: 4px black;
-        text-shadow: none;
-    }
+@supports ((text-stroke: 2px black) or (-webkit-text-stroke: 2px black)) {
+  .outline {
+    color: transparent;
+    -webkit-text-stroke: 4px black;
+    text-shadow: none;
+  }
 }
 
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .lp-slideshow > .dot-container > .dot {
+    height: 16px;
+    width: 16px;
+  }
+  .lp-slideshow > .container > .prev,
+  .lp-slideshow > .container > .next {
+    font-size: 18px;
+    padding: 14px 22px;
+    top: 40%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .lp-slideshow > .dot-container > .dot {
+    height: 20px;
+    width: 20px;
+  }
+  .lp-slideshow > .container > .prev,
+  .lp-slideshow > .container > .next {
+    font-size: 22px;
+    padding: 16px 28px;
+    top: 45%;
+  }
+}
 

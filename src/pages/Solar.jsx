@@ -11,6 +11,7 @@ import BgSolar from "../assets/tn.svg";
 import settings from "../assets/settingsb.svg";
 import user from "../assets/userb.svg";
 import smile from "../assets/smileb.svg";
+import SlideShow2 from "../solarcomponents/SlideShow2";
 const list = [
   {
     title: "Free Consultation",
@@ -53,3 +54,4 @@ export default function Solar() {
     </div>
   );
 }
+// <SlideTitle />

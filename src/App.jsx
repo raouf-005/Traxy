@@ -12,7 +12,7 @@ function App() {
       path: "/",
       element: <Landing />,
       errorElement: (
-        <div className="flex items-center justify-center text-7xl p-12">
+        <div className="flex items-center  sm justify-center text-7xl p-12">
           404 Not Found
         </div>
       ),

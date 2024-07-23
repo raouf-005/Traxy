@@ -1,7 +1,9 @@
 import React from "react";
 import Videomp4 from "../assets/video.mp4";
-import { Button } from "@nextui-org/react";
-
+import { Button, Image } from "@nextui-org/react";
+import { useState } from "react";
+import Mute from "../assets/mute.svg";
+import Unmute from "../assets/unmute.svg";
 
 export const handleClick = (anchor) => () => {
   const id = `${anchor}-section`;
@@ -15,14 +17,18 @@ export const handleClick = (anchor) => () => {
 };
 
 export default function Video() {
+
+  const [isMuted, setIsMuted] = useState(true);
+
   return (
     <div className="flex flex-col items-center  justify-center w-full  relative">
       <video
-        className="w-full h-full object-cover "
+        className="w-full h-full object-cover md:h-screen md:object-fill "
         autoPlay
         loop
-        muted
+        muted={isMuted}
         playsInline
+        alt='video'
         src={Videomp4}
       />
       <div className="absolute text-center   lg:space-y-32 md:space-y-12 space-y-8">
@@ -37,6 +43,13 @@ export default function Video() {
           About us
         </Button>
       </div>
+      <Button size="md" radius="lg" className=" absolute bottom-[3.8%] left-[4.9%]" isIconOnly
+        onClick={() => setIsMuted(!isMuted)}
+      >
+        {
+          isMuted ?<Image src={Mute} alt="Unmute" width={30}  className=" object-scale-down   object-center" /> : <Image src={Unmute} width={30} alt="Mute" className=" object-cover  object-center "  />
+        }
+      </Button>
     </div>
   );
 }
