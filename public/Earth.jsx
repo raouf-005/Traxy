@@ -6,14 +6,14 @@ Command: npx gltfjsx@6.4.1 earth.gltf
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export default function Model(props) {
+export default function Earth(props) {
   const { nodes, materials } = useGLTF('/earth.gltf')
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.Object_2.geometry} material={materials['None.001']} position={[-1.39, -0.046, -2.374]} rotation={[-Math.PI / 2, 0, 0.463]} scale={[0.161, 0.061, 0.161]} />
+    <group {...props} dispose={null}  rotation={[0.06,1.19,0]}  >
+      <mesh geometry={nodes.Object_2.geometry} material={materials['None.001']} position={[-1.39, -0.046, -2.494]} rotation={[-Math.PI / 2, 0, 0.463]} scale={[0.161, 0.061, 0.161]} />
       <mesh geometry={nodes.Object_4.geometry} material={materials['Material.002']} position={[1.928, 0, -2.115]} rotation={[1.547, -0.029, -2.44]} scale={0.031} />
-      <mesh geometry={nodes.pSphere4.geometry} material={materials.lambert6} rotation={[Math.PI / 2, 0, 0]} scale={2.595} />
-      <mesh geometry={nodes.logo.geometry} material={materials.logo} position={[-2.475, 0.4, 0.898]} rotation={[1.53, -0.092, 1.15]}  scale={1.3} />
+      <mesh geometry={nodes.pSphere4.geometry} material={materials.lambert6} rotation={[Math.PI / 2, 0, 0]} scale={2.695}/>
+      <mesh geometry={nodes.logo.geometry} material={materials.logo} position={[-2.475, 0.4, 0.898]} rotation={[1.53, -0.092, 1.15]}  scale={1.49} />
     </group>
   )
 }
