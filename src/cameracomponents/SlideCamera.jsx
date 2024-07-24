@@ -3,14 +3,15 @@ import React, { useEffect, useState } from "react";
 import CameraSwipe2 from "./CameraSwipe2";
 const ONE_SECOND = 1000;
 const AUTO_DELAY = ONE_SECOND * 8;
-const DRAG_BUFFER = 80;
+const DRAG_BUFFER = 40;
 
 const SPRING_OPTIONS = {
-  type: "",
-  mass: 1,
-  stiffness: 400,
-  damping: 90,
-};
+    type: "spring",
+    mass: 3,
+    stiffness: 400,
+    damping: 50,
+  };
+  
 
 
 
