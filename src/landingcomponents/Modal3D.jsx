@@ -6,15 +6,13 @@ import { OrbitControls } from "@react-three/drei";
 import { Environment } from "@react-three/drei";
 export default function Modal3D() {
   return (
-   
-      <Canvas >
-        <ambientLight />
-        <Suspense fallback={null}>
-          <OrbitControls enableZoom={false} />
-          <Earth />
-        </Suspense>
-        <Environment  preset='night' />
-      </Canvas>
-
+    <Canvas>
+      <ambientLight />
+      <Suspense fallback={null}>
+        <OrbitControls enableZoom={false} />
+        <Earth  />
+      </Suspense>
+      <Environment preset="sunset" />
+    </Canvas>
   );
 }

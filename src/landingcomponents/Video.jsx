@@ -43,7 +43,7 @@ export default function Video() {
           About us
         </Button>
       </div>
-      <Button size="md" radius="lg" className=" absolute bottom-[3.8%] left-[4.9%]" isIconOnly
+      <Button  radius="lg" className=" absolute bottom-[3.8%] left-[4.9%]  bg-white" isIconOnly
         onClick={() => setIsMuted(!isMuted)}
       >
         {

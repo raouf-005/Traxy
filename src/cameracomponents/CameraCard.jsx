@@ -2,7 +2,7 @@
 import React from "react";
 
 
-export default function CameraCard() {
+export default function CameraCard(props) {
 
     return(
         <div className="flex flex-col gap-1 justify-center items-center ">

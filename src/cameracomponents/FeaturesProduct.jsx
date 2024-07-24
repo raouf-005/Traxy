@@ -15,6 +15,7 @@ import camera1hh from "../assets/cameras/camera1hh.svg"
 import camera3h from "../assets/cameras/camera3h.svg"
 import camera4h from "../assets/cameras/camera4h.svg"
 import camera6h from "../assets/cameras/camera6h.svg"
+import SlideCamera from "./SlideCamera";
 
 
 
@@ -101,19 +102,22 @@ export default function FeaturesProduct() {
       <h1 className="md:text-7xl text-4xl  text-center py-12">
         Featured Products
       </h1>
-      <div className="flex flex-row  justify-evenly gap-[2%] items-center flex-wrap">
+     <div className="sm:flex flex-row  justify-evenly gap-[2%] items-center flex-wrap hidden">
         {layout1.map((item) => (
           <CameraCard title={item.title} image={item.image} image2={item.image2} />
         ))}
       </div>
+
+      <SlideCamera list={layout1}  />
       <h1 className="col-span-3 lg:text-5xl text-2xl md:text-4xl text-center mt-7 py-12">
         Discover Our Top-Selling CCTV Cameras and <br /> Security Systems
       </h1>
-      <div className="flex flex-row  justify-evenly  gap-[2%]    items-center flex-wrap">
+      <div className="sm:flex flex-row  justify-evenly  gap-[2%]    items-center flex-wrap hidden">
       {layout2.map((item) => (
           <CameraCard title={item.title} image={item.image} image2={item.image2} />
         ))}
       </div>
+      <SlideCamera list={layout2}  />
     </div>
   );
 }

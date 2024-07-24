@@ -50,7 +50,7 @@ export default function FooterBottom() {
         <Button className="bg-transparent text-white text-sm sm:text-base">
           Terms of Conditions
         </Button>
-        <Button className="bg-transparent text-white">Privacy Policy</Button>
+        <Button className="bg-transparent text-white text-sm sm:text-base">Privacy Policy</Button>
       </div>
     </div>
   );
