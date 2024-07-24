@@ -1,15 +1,15 @@
 import { motion, useMotionValue } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import CameraSwipe2 from "./CameraSwipe2";
-const ONE_SECOND = 1000;
-const AUTO_DELAY = ONE_SECOND * 8;
-const DRAG_BUFFER = 40;
+const ONE_SECOND = 1200;
+const AUTO_DELAY = ONE_SECOND * 7;
+const DRAG_BUFFER = 30;
 
 const SPRING_OPTIONS = {
-    type: "spring",
-    mass: 3,
-    stiffness: 400,
-    damping: 50,
+    type: "SPRING",
+    mass: 1,
+    stiffness: 500,
+    damping: 30,
   };
   
 
@@ -50,14 +50,14 @@ const SPRING_OPTIONS = {
         <motion.div
             drag="x"
             dragConstraints={{
-                left: 40,
+                left: 10,
                 right: -50,
             }}
             style={{
                 x: dragX,
             }}
             animate={{
-                translateX: `-${cardIndex * 55}%`,
+                translateX: `-${cardIndex * 57}%`,
             }}
             transition={SPRING_OPTIONS}
             onDragEnd={onDragEnd}
