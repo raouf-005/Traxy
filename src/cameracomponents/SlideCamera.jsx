@@ -51,7 +51,7 @@ const SPRING_OPTIONS = {
             drag="x"
             dragConstraints={{
                 left: 40,
-                right: 50,
+                right: -50,
             }}
             style={{
                 x: dragX,
