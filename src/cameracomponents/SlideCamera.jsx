@@ -6,9 +6,9 @@ const AUTO_DELAY = ONE_SECOND * 7;
 const DRAG_BUFFER = 30;
 
 const SPRING_OPTIONS = {
-    type: "SPRING",
-    mass: 1,
-    stiffness: 500,
+    type: "linear",
+    mass: 0,
+    stiffness: 50,
     damping: 30,
   };
   
