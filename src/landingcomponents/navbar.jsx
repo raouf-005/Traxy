@@ -15,8 +15,8 @@ import Menu from "../assets/menu.svg";
 
 const menuItems = [
   "Main",
-  "Camera Securité",
-  "Energy Solaire",
+  "Security Camera",
+  "Solar Energy",
   "GPS tracking System",
 ];
 
@@ -74,10 +74,10 @@ export default function Navbar3() {
     if (item === "Main") {
       navigate("/");
     }
-    if (item === "Camera Securité") {
+    if (item === "Security Camera") {
       navigate("/camera");
     }
-    if (item === "Energy Solaire") {
+    if (item === "Solar Energy") {
       navigate("/solar");
     }
     if (item === "GPS tracking System") {
@@ -110,7 +110,7 @@ export default function Navbar3() {
             }}
             className="bg-transparent text-white"
           >
-            Camera Securité
+            Security Camera
           </Button>
           <Button
             onClick={() => {
@@ -118,7 +118,7 @@ export default function Navbar3() {
             }}
             className="bg-transparent text-white"
           >
-            Energy Solaire
+            Solar Energy
           </Button>
           <Button
             onClick={() => {

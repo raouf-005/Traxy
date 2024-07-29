@@ -7,7 +7,7 @@ export default function FooterBottom() {
 
   return (
     <div className="flex flex-row justify-around py-2 items-center flex-wrap">
-      <p   className="text-slate-200  text-sm sm:text-base ">
+      <p className="text-slate-200  text-sm sm:text-base ">
         Copyright © 2024 TRAXY. All Rights Reserved.
       </p>
 
@@ -26,7 +26,7 @@ export default function FooterBottom() {
           }}
           className="bg-transparent text-white text-sm sm:text-base"
         >
-          Camera Securité
+          Security Camera
         </Button>
         <Button
           onClick={() => {
@@ -34,7 +34,7 @@ export default function FooterBottom() {
           }}
           className="bg-transparent text-white text-sm sm:text-base"
         >
-          Energy Solaire
+          Solar Energy
         </Button>
         <Button
           onClick={() => {
@@ -50,7 +50,9 @@ export default function FooterBottom() {
         <Button className="bg-transparent text-white text-sm sm:text-base">
           Terms of Conditions
         </Button>
-        <Button className="bg-transparent text-white text-sm sm:text-base">Privacy Policy</Button>
+        <Button className="bg-transparent text-white text-sm sm:text-base">
+          Privacy Policy
+        </Button>
       </div>
     </div>
   );

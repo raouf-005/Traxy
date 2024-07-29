@@ -17,7 +17,6 @@ export const handleClick = (anchor) => () => {
 };
 
 export default function Video() {
-
   const [isMuted, setIsMuted] = useState(true);
 
   return (
@@ -28,7 +27,7 @@ export default function Video() {
         loop
         muted={isMuted}
         playsInline
-        alt='video'
+        alt="video"
         src={Videomp4}
       />
       <div className="absolute text-center   lg:space-y-32 md:space-y-12 space-y-8">
@@ -36,19 +35,34 @@ export default function Video() {
           Your Trusted Partner for Advanced Security and Renewable Energy
           Solutions
         </h1>
-        <Button onClick={
-          handleClick("about")
-        
-        } className="bg-transparent border-white   rounded-2xl border-1.5 md:text-sm lg:text-xl font-light  md:px-6 md:h-9  lg:px-12  lg:h-12 text-white">
+        <Button
+          onClick={handleClick("about")}
+          className="bg-transparent border-white   rounded-2xl border-1.5 md:text-sm lg:text-xl font-light  md:px-6 md:h-9  lg:px-12  lg:h-12 text-white"
+        >
           About us
         </Button>
       </div>
-      <Button  radius="lg" className=" absolute bottom-[3.8%] left-[4.9%]  bg-white" isIconOnly
+      <Button
+        radius="lg"
+        className=" absolute bottom-[3.8%] left-[4.9%]  bg-white"
+        isIconOnly
         onClick={() => setIsMuted(!isMuted)}
       >
-        {
-          isMuted ?<Image src={Mute} alt="Unmute" width={30}  className=" object-scale-down   object-center" /> : <Image src={Unmute} width={30} alt="Mute" className=" object-cover  object-center "  />
-        }
+        {isMuted ? (
+          <Image
+            src={Mute}
+            alt="Unmute"
+            width={30}
+            className=" object-scale-down   object-center"
+          />
+        ) : (
+          <Image
+            src={Unmute}
+            width={30}
+            alt="Mute"
+            className=" object-cover  object-center "
+          />
+        )}
       </Button>
     </div>
   );

@@ -13,7 +13,7 @@ const features = [
   {
     title: "Best Price",
     description:
-      "By the same illusion which lifts the horizon of the sea to the level.",
+      "We ensure our prices always look the best to you, delivering quality and value without compromise.",
     image: price,
   },
   {
@@ -25,16 +25,16 @@ const features = [
 ];
 
 export default function Features() {
-return (
+  return (
     <div className="flex flex-row justify-around flex-wrap gap-8  py-20 ">
-        {features.map((feature, index) => (
-            <FeatureCard
-                key={index}
-                title={feature.title}
-                description={feature.description}
-                image={feature.image}
-            />
-        ))}
+      {features.map((feature, index) => (
+        <FeatureCard
+          key={index}
+          title={feature.title}
+          description={feature.description}
+          image={feature.image}
+        />
+      ))}
     </div>
-);
+  );
 }
