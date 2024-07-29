@@ -93,9 +93,9 @@ export default function Navbar3() {
           visible ? "sm:top-0" : "sm:-top-24"
         }`}
       >
-        <div className="flex flex-row   lg:gap-12  items-center ">
-          <Image src={traxylogo} alt="logo" width={60} height={60} />
-          <h1 className=" text-4xl">TRAXY</h1>
+        <div className="flex flex-row gap-2  lg:gap-12  items-center ">
+          <Image src={traxylogo} alt="logo"  width={60} height={60} className=" max-w-[3.2rem] mb-3  md:max-w-80"/>
+          <h1 className=" sm:text-4xl   text-3xl">TRAXY</h1>
         </div>
         <div className="lg:flex flex-row gap-[3.7%]  px-2  items-center hidden flex-1 justify-center">
           <Button
