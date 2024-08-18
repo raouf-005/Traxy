@@ -13,14 +13,17 @@
     "@nextui-org/react": "^2.4.2",
     "@react-three/drei": "^9.108.1",
     "@react-three/fiber": "^8.16.8",
+    "axios": "^1.7.4",
     "flowbite-react": "^0.10.1",
+    "formik": "^2.4.6",
     "framer-motion": "^11.2.12",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.24.0",
     "react-spring": "^9.7.3",
     "react-swipy": "^0.0.6",
-    "three": "^0.166.0"
+    "three": "^0.166.0",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

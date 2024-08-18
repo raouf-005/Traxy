@@ -1,0 +1,24 @@
+#btnSlider {
+  left: 4px;
+  top: 3.4px;
+  position: absolute;
+  padding-inline: 68px;
+
+  background: #a493d4;
+  transition: 0.27s ease-in-out;
+  padding-block: 28px;
+}
+
+.buttonsHolder {
+  position: relative;
+  margin: 35px auto;
+}
+.toggle-btn {
+  font-size: 26px;
+  font-weight: 400;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+}

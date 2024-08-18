@@ -19,6 +19,7 @@ export default function CameraCard(props) {
         width={430}
         className={`  p-${props.padding} cursor-pointer lg:h-[400px] h-[350px] object-scale-down `}
         isZoomed
+        disableSkeleton
       />
 
 

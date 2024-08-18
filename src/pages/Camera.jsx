@@ -11,6 +11,8 @@ import settings from "../assets/settings.svg";
 import user from "../assets/user.svg";
 import smile from "../assets/smile.svg";
 import OurServices from "../cameracomponents/OurServices";
+import Pack from "../cameracomponents/Pack";
+
 const list = [
     {
         title: "Monitoring",
@@ -46,7 +48,8 @@ export default function Camera() {
         <FeaturesProduct />
        
         <OurServices list={list} />
-        
+
+      <Pack />        
         <Footer />
    
     </div>

@@ -4,7 +4,7 @@ import Dash from "../assets/DASH.svg";
 const ServiceCard = (props) => {
   return (
     <div
-      className={`flex-row flex gap-6 rounded-md text-white  p-3 px-6 `}
+      className={`flex-row flex gap-6 rounded-md text-white  p-3 sm:px-6 `}
     >
       <Image
         src={props.image }
@@ -30,7 +30,7 @@ const ServiceCard = (props) => {
 
 export default function OurServices(props) {
   return (
-    <div className="md:px-[5%] px-9  py-20 flex  justify-center ">
+    <div className="md:px-[5%] px-[2%] sm:px-9  py-20 flex  justify-center ">
     <div className="flex flex-col justify-center items-center gap-8 md:gap-24 p-10 md:py-32 py-8 xl:p-16 xl:py-36 bg-[#B28EFF] text-white rounded-[4rem]">
       <h1 className=" lg:text-9xl md:text-6xl text-4xl  font-bold">Our Services</h1>
       <div className="flex flex-row  justify-center  md:gap-[6%]  xl:gap-[8%]  items-center">
