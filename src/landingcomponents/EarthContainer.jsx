@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import EarthLayout from "./EarthLayout";
+import WebGL from "three/addons/capabilities/WebGL.js";
 
 const detectWebGLContext = () => {
   // Create canvas element. The canvas is not added to the
@@ -19,7 +20,9 @@ const detectWebGLContext = () => {
 export default function EarthContainer() {
   return (
     <div className="flex flex-row justify-center px-24 text-white  bg-custom   py-12">
-      {detectWebGLContext() ? (
+      {detectWebGLContext() &&
+      WebGL.isWebGL2Available() &&
+      window.WebGLRenderingContext ? (
         <EarthLayout />
       ) : (
         <p className="text-center max-w-sm text-5xl">
