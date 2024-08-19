@@ -10,17 +10,17 @@ export default function InputOrder({ type, label, formik }) {
         label={label}
         type={type}
         classNames={{
-          input: "border-none   focus:ring-0  ",
+          input: "border-none   focus:ring-0   ",
           inputWrapper: "bg-white ",
-          label: "text-lg",
+          label: "text-lg   ",
         }}
         {...formikfield}
-        radius="none"
+        radius="full"
         isRequired
-        size="sm"
+        size="md"
       />
 
-      <div className="max-w-[300px]">
+      <div className="max-w-[300px] pt-1 pl-3 ">
         {formik.touched[formikfield.name] && formik.errors[formikfield.name] ? (
           <p className="text-red-500 text-xs  max-w-[300px] ">
             {formik.errors[formikfield.name]}

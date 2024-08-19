@@ -56,18 +56,18 @@ export default function Order(props) {
       <Modal
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        className="bg-black"
-        size="lg"
+        className="bg-black rounded-[5.4rem] sm:py-4"
+        size="md"
       >
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1 items-center justify-center text-white">
+              <ModalHeader className="flex flex-col gap-1 items-center font-normal justify-center text-white mt-5 mb-2 text-3xl  ">
                 ORDER FORM
               </ModalHeader>
-              <ModalBody className=" bg-black px-3">
+              <ModalBody className=" bg-black  px-6 sm:px-14 sm:pb-5">
                 <form
-                  className=" bg-black gap-3 flex flex-col"
+                  className=" bg-black gap-4 flex flex-col "
                   onSubmit={formik.handleSubmit}
                 >
                   <InputOrder label="Full Name" type="text" formik={formik} />
@@ -82,9 +82,11 @@ export default function Order(props) {
                       trigger: "bg-white",
                     }}
                     selectedKeys={value}
-                    className="max-w-xs"
+                    className="max-w-[14rem]"
                     onSelectionChange={setValue}
                     isRequired
+                    size="md"
+                    radius="full"
                   >
                     {packs.map((pack) => (
                       <SelectItem key={pack.key}>{pack.label}</SelectItem>
@@ -92,14 +94,24 @@ export default function Order(props) {
                   </Select>
                 </form>
               </ModalBody>
-              <ModalFooter className=" justify-center items-center ">
-                <Button color="danger" variant="light" onPress={onClose}>
+              <ModalFooter className=" justify-center items-center gap-3 sm:gap-4 mb-5 mt-2">
+                <Button 
+                  className="bg-[#A493D4] px-10 py-7 text-xl text-white"
+                  size="lg"
+                  radius="full"
+                onPress={onClose}>
                   Cancel
                 </Button>
                 <Button
-                  color="primary"
-                  onPress={onClose}
-                  onClick={formik.handleSubmit}
+                 className="text-[#A493D4] px-10 py-7 text-xl bg-white"
+                 
+                  onClick={()=>{
+                    formik.handleSubmit()
+                    setTimeout(() => {
+                      onClose()
+                    }, 2500);
+                  }}
+                  radius="full"
                 >
                   Submit
                 </Button>
