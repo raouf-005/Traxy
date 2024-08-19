@@ -25,7 +25,7 @@ export default function EarthContainer() {
       window.WebGLRenderingContext ? (
         <EarthLayout />
       ) : (
-        <p className="text-center max-w-sm text-5xl">
+        <p className="text-center   text-3xl items-center justify-end max-w-lg  flex ">
           WebGL is not supported on your browser
         </p>
       )}
