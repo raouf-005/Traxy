@@ -14,7 +14,7 @@ const packsInfo = [
     price: "28000",
     caractesristics: [
       "Camera Dahua 2MP",
-      "XVR 4P Dahua",
+      "XVR 5MP 4P Dahua",
       "HDD 500GB",
       "BLOC ALIM 4P",
       "Fihe BNC/ELEC , CABLE 20M",
@@ -25,7 +25,7 @@ const packsInfo = [
     price: "39100",
     caractesristics: [
       "Camera Dahua 2MP",
-      "XVR 4P Dahua",
+      "XVR 5MP 4P Dahua",
       "HDD 500GB",
       "BLOC ALIM 4P",
       "Fihe BNC/ELEC , CABLE 40M",
@@ -36,7 +36,7 @@ const packsInfo = [
     price: "54100",
     caractesristics: [
       "Camera Dahua 2MP",
-      "XVR 8P Dahua",
+      "XVR 5MP 8P Dahua",
       "HDD 500GB",
       "BLOC ALIM 8P",
       "Fihe BNC/ELEC , CABLE 60M",
@@ -47,7 +47,7 @@ const packsInfo = [
     price: "63700",
     caractesristics: [
       "Camera Dahua 2MP",
-      "XVR 8P Dahua",
+      "XVR 5MP 8P Dahua",
       "HDD 500GB",
       "BLOC ALIM 8P",
       "Fihe BNC/ELEC , CABLE 80M",
@@ -58,7 +58,7 @@ const packsInfo = [
     price: "31000",
     caractesristics: [
       "Camera Dahua 5MP",
-      "XVR 4P Dahua",
+      "XVR 5MP 4P Dahua",
       "HDD 500GB",
       "BLOC ALIM 4P",
       "Fihe BNC/ELEC , CABLE 20M",
@@ -69,7 +69,7 @@ const packsInfo = [
     price: "45100",
     caractesristics: [
       "Camera Dahua 5MP",
-      "XVR 4P Dahua",
+      "XVR 5MP 4P Dahua",
       "HDD 500GB",
       "BLOC ALIM 4P",
       "Fihe BNC/ELEC , CABLE 40M",
@@ -80,7 +80,7 @@ const packsInfo = [
     price: "63100",
     caractesristics: [
       "Camera Dahua 5MP",
-      "XVR 8P Dahua",
+      "XVR 5MP 8P Dahua",
       "HDD 500GB",
       "BLOC ALIM 8P",
       "Fihe BNC/ELEC , CABLE 60M",
@@ -91,7 +91,7 @@ const packsInfo = [
     price: "74700",
     caractesristics: [
       "Camera Dahua 5MP",
-      "XVR 8P Dahua",
+      "XVR 5MP 8P Dahua",
       "HDD 500GB",
       "BLOC ALIM 8P",
       "Fihe BNC/ELEC , CABLE 80M",

@@ -2,7 +2,8 @@ import React from "react";
 import "../App.css";
 import EarthLayout from "./EarthLayout";
 import WebGL from "three/addons/capabilities/WebGL.js";
-
+import { Image } from "@nextui-org/react";
+import earth2D from "../assets/earth2D.png";
 const detectWebGLContext = () => {
   // Create canvas element. The canvas is not added to the
   // document itself, so it is never displayed in the
@@ -20,14 +21,16 @@ const detectWebGLContext = () => {
 export default function EarthContainer() {
   return (
     <div className="flex flex-row justify-center px-24 text-white  bg-custom   py-12">
-      {detectWebGLContext() &&
+      {!detectWebGLContext() &&
       WebGL.isWebGL2Available() &&
       window.WebGLRenderingContext ? (
         <EarthLayout />
       ) : (
-        <p className="text-center   text-3xl items-center justify-end max-w-lg  flex ">
-          WebGL is not supported on your browser
-        </p>
+        <Image
+          className="    items-end justify-center   object-bottom object-contain   hidden lg:flex "
+          width={690}
+          src={earth2D}
+        />
       )}
       <div className="flex-1 flex justify-center items-top lg:mt-40">
         <p className="text-center  leading-[47px] max-w-md lg:max-w-3xl text-lg  ">
