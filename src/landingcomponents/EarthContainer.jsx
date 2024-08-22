@@ -21,8 +21,8 @@ const detectWebGLContext = () => {
 export default function EarthContainer() {
   return (
     <div className="flex flex-row justify-center px-24 text-white  bg-custom   py-12">
-      {detectWebGLContext() &&
-      WebGL.isWebGL2Available() &&
+      {detectWebGLContext() ||
+      WebGL.isWebGL2Available() ||
       window.WebGLRenderingContext ? (
         <EarthLayout />
       ) : (

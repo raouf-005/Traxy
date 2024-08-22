@@ -17,7 +17,7 @@ const packsInfo = [
       "XVR 5MP 4P Dahua",
       "HDD 500GB",
       "BLOC ALIM 4P",
-      "Fihe BNC/ELEC , CABLE 20M",
+      "Fiche BNC/ELEC , CABLE 20M",
     ],
   },
   {
@@ -28,7 +28,7 @@ const packsInfo = [
       "XVR 5MP 4P Dahua",
       "HDD 500GB",
       "BLOC ALIM 4P",
-      "Fihe BNC/ELEC , CABLE 40M",
+      "Fiche BNC/ELEC , CABLE 40M",
     ],
   },
   {
@@ -39,7 +39,7 @@ const packsInfo = [
       "XVR 5MP 8P Dahua",
       "HDD 500GB",
       "BLOC ALIM 8P",
-      "Fihe BNC/ELEC , CABLE 60M",
+      "Fiche BNC/ELEC , CABLE 60M",
     ],
   },
   {
@@ -50,7 +50,7 @@ const packsInfo = [
       "XVR 5MP 8P Dahua",
       "HDD 500GB",
       "BLOC ALIM 8P",
-      "Fihe BNC/ELEC , CABLE 80M",
+      "Fiche BNC/ELEC , CABLE 80M",
     ],
   },
   {
@@ -61,7 +61,7 @@ const packsInfo = [
       "XVR 5MP 4P Dahua",
       "HDD 500GB",
       "BLOC ALIM 4P",
-      "Fihe BNC/ELEC , CABLE 20M",
+      "Fiche BNC/ELEC , CABLE 20M",
     ],
   },
   {
@@ -72,7 +72,7 @@ const packsInfo = [
       "XVR 5MP 4P Dahua",
       "HDD 500GB",
       "BLOC ALIM 4P",
-      "Fihe BNC/ELEC , CABLE 40M",
+      "Fiche BNC/ELEC , CABLE 40M",
     ],
   },
   {
@@ -83,7 +83,7 @@ const packsInfo = [
       "XVR 5MP 8P Dahua",
       "HDD 500GB",
       "BLOC ALIM 8P",
-      "Fihe BNC/ELEC , CABLE 60M",
+      "Fiche BNC/ELEC , CABLE 60M",
     ],
   },
   {
@@ -94,7 +94,7 @@ const packsInfo = [
       "XVR 5MP 8P Dahua",
       "HDD 500GB",
       "BLOC ALIM 8P",
-      "Fihe BNC/ELEC , CABLE 80M",
+      "Fiche BNC/ELEC , CABLE 80M",
     ],
   },
 ];
