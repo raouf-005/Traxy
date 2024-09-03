@@ -198,7 +198,7 @@ export default function Navbar3() {
             <div className="flex flex-row gap-3 justify-center items-center ">
               <Button
                 onClick={() => {
-                  window.open("https://www.facebook.com/");
+                  window.open("https://www.facebook.com/WWW.S3.DZ");
                 }}
                 radius="full"
                 isIconOnly
@@ -213,17 +213,17 @@ export default function Navbar3() {
               </Button>
               <Button
                 onClick={() => {
-                  window.open("https://www.twitter.com/");
+                  window.open("https://www.tiktok.com/@traxy.dz");
                 }}
                 radius="full"
                 isIconOnly
                 className=" w-14 h-14"
               >
-                <Image src={TwitterIcon} alt="twitter" width={28} height={28} />
+                <Image src={TiktokIcon} alt="twitter" width={28} height={28} />
               </Button>
               <Button
                 onClick={() => {
-                  window.open("https://www.instagram.com/");
+                  window.open("https://www.instagram.com/traxy.dz/");
                 }}
                 radius="full"
                 isIconOnly
