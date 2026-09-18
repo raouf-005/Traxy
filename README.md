@@ -1,8 +1,25 @@
-# React + Vite
+# Traxy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Product and ordering site for a GPS tracking and security camera company.
 
-Currently, two official plugins are available:
+**[Live demo](https://traxy-psi.vercel.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## Sections
+
+- **Landing** — hero with an interactive 3D globe (`EarthContainer`, `Modal3D`), services, about and a full footer
+- **GPS trackers** — feature breakdown across several presentation blocks
+- **Cameras** — product carousel, feature cards, pack comparison and an order form
+- **Ordering** — order state handled through a `useOrder` custom hook, with validated inputs
+
+## Stack
+
+React · Vite · Tailwind CSS · Swiper · Three.js
+
+## Running locally
+
+```bash
+npm install
+npm run dev
+```
